@@ -1,32 +1,39 @@
 @font-face {
   font-family: LeroyMerlinBold;
-  src: url('./assets/fonts/LeroyMerlinSansBold.eot');
-  src: url('./assets/fonts/LeroyMerlinSansBold.eot?#iefix') format('embedded-opentype'),
-    url('./assets/fonts/LeroyMerlinSansBold.woff') format('woff'),
-    url('./assets/fonts/LeroyMerlinSansBold.ttf') format('truetype'),
-    url('./assets/fonts/LeroyMerlinSansBold.svg#3dumbregular') format('svg');
+  src: url("./assets/fonts/LeroyMerlinSansBold.eot");
+  src: url("./assets/fonts/LeroyMerlinSansBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/LeroyMerlinSansBold.woff") format("woff"),
+    url("./assets/fonts/LeroyMerlinSansBold.ttf") format("truetype"),
+    url("./assets/fonts/LeroyMerlinSansBold.svg#3dumbregular") format("svg");
 }
 
 @font-face {
   font-family: LeroyMerlinRegular;
-  src: url('./assets/fonts/LeroyMerlinSansRegular.eot');
-  src: url('./assets/fonts/LeroyMerlinSansRegular.eot?#iefix') format('embedded-opentype'),
-    url('./assets/fonts/LeroyMerlinSansRegular.woff') format('woff'),
-    url('./assets/fonts/LeroyMerlinSansRegular.ttf') format('truetype'),
-    url('./assets/fonts/LeroyMerlinSansRegular.svg#3dumbregular') format('svg');
+  src: url("./assets/fonts/LeroyMerlinSansRegular.eot");
+  src: url("./assets/fonts/LeroyMerlinSansRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/LeroyMerlinSansRegular.woff") format("woff"),
+    url("./assets/fonts/LeroyMerlinSansRegular.ttf") format("truetype"),
+    url("./assets/fonts/LeroyMerlinSansRegular.svg#3dumbregular") format("svg");
 }
 
 @font-face {
   font-family: LeroyMerlinLight;
-  src: url('./assets/fonts/LeroyMerlinSansLight.eot');
-  src: url('./assets/fonts/LeroyMerlinSansLight.eot?#iefix') format('embedded-opentype'),
-    url('./assets/fonts/LeroyMerlinSansLight.woff') format('woff'),
-    url('./assets/fonts/LeroyMerlinSansLight.ttf') format('truetype'),
-    url('./assets/fonts/LeroyMerlinSansLight.svg#3dumbregular') format('svg');
+  src: url("./assets/fonts/LeroyMerlinSansLight.eot");
+  src: url("./assets/fonts/LeroyMerlinSansLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/LeroyMerlinSansLight.woff") format("woff"),
+    url("./assets/fonts/LeroyMerlinSansLight.ttf") format("truetype"),
+    url("./assets/fonts/LeroyMerlinSansLight.svg#3dumbregular") format("svg");
 }
 body {
   margin: 0;
   background-color: #f8f8f8;
+}
+img {
+  display: block;
+  width: 100%;
 }
 .App {
   font-family: LeroyMerlinRegular;
@@ -48,7 +55,6 @@ body {
   margin: 16px;
 }
 
-
 .step-cards-container {
   display: flex;
   flex-wrap: nowrap;
@@ -62,14 +68,36 @@ body {
   margin-right: 16px;
 }
 
-.step-card:hover img {
-  opacity: .8;
+.step-card__img {
+  width: 100%;
+  display: block;
+  position: relative;
+  img {
+    border-radius: 8px;
+    width: 315px;
+    height: 322px;
+  }
 }
-
-.step-card img {
-  border-radius: 8px;
-  width: 315px;
-  height: 322px;
+.filter {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  border-radius: 14px;
+  &__checked {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+  }
+}
+.filter:hover {
+  filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .step-card .title {
@@ -85,7 +113,6 @@ body {
 
 .button {
   font-family: LeroyMerlinBold;
-  width: 376px;
   height: 60px;
   background-color: #66cc33;
   color: white;
@@ -94,7 +121,9 @@ body {
   line-height: 60px;
   cursor: pointer;
   width: 100%;
-  float: left;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 
 .button.disabled {
@@ -102,7 +131,6 @@ body {
   border: solid 1px #9b9b9b;
   color: #9b9b9b;
 }
-
 
 /* MEDIA QUERY BREAKPONT EXAMPLE */
 
@@ -115,11 +143,12 @@ body {
 }
 
 /* tablet landscape */
-@media (min-width: 900px) {}
+@media (min-width: 900px) {
+}
 
 /* desktop */
-@media (min-width: 1200px) {}
-
-
-@import './components/RIsultati.scss';
-@import './components/Questionario.scss';
+@media (min-width: 1200px) {
+}
+@import "./components/Step.scss";
+@import "./components/RIsultati.scss";
+@import "./components/Questionario.scss";

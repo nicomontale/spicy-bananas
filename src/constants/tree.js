@@ -1,14 +1,13 @@
-
 export default {
   children: [
     {
-      // attività - manutenzione
+      // attività - manutenzione 100
       children: [
         {
-          // no ostacoli
+          // no ostacoli 104
           children: [
             {
-              // pendenza - affossamenti
+              // pendenza - affossamenti 105
               children: [
                 {
                   // dimensioni
@@ -26,7 +25,7 @@ export default {
               ]
             },
             {
-              // pendenza - piano
+              // pendenza - piano 106
               children: [
                 {
                   results: [1]
@@ -45,10 +44,10 @@ export default {
           ]
         },
         {
-          // ostacoli - picoli
+          // ostacoli - picoli 102
           children: [
             {
-              // pendenza - affossamenti
+              // pendenza - affossamenti 105
               children: [
                 {
                   results: [6]
@@ -65,7 +64,7 @@ export default {
               ]
             },
             {
-              // pendenza - piano
+              // pendenza - piano 106
               children: [
                 {
                   results: [4]
@@ -84,10 +83,10 @@ export default {
           ]
         },
         {
-          // ostacoli - grandi
+          // ostacoli - grandi 103
           children: [
             {
-              // pendenza - affossamenti
+              // pendenza - affossamenti 105
               children: [
                 {
                   results: [6]
@@ -104,7 +103,7 @@ export default {
               ]
             },
             {
-              // pendenza - piano
+              // pendenza - piano 106
               children: [
                 {
                   results: [4]
@@ -125,13 +124,13 @@ export default {
       ]
     },
     {
-      // attività - rinnovare
+      // attività - rinnovare 101
       children: [
         {
-          // no ostacoli
+          // no ostacoli 104
           children: [
             {
-              // pendenza - affossamenti
+              // pendenza - affossamenti 105
               children: [
                 {
                   results: [14]
@@ -148,7 +147,7 @@ export default {
               ]
             },
             {
-              // pendenza - piano
+              // pendenza - piano 106
               children: [
                 {
                   results: [14]
@@ -167,10 +166,10 @@ export default {
           ]
         },
         {
-          // ostacoli - picoli
+          // ostacoli - picoli 102
           children: [
             {
-              // pendenza - affossamenti
+              // pendenza - affossamenti 105
               children: [
                 {
                   results: [12, 14]
@@ -187,7 +186,7 @@ export default {
               ]
             },
             {
-              // pendenza - piano
+              // pendenza - piano 106
               children: [
                 {
                   results: [12, 14]
@@ -206,10 +205,10 @@ export default {
           ]
         },
         {
-          // ostacoli - grandi
+          // ostacoli - grandi 103
           children: [
             {
-              // pendenza - affossamenti
+              // pendenza - affossamenti 105
               children: [
                 {
                   results: [12, 14]
@@ -226,7 +225,7 @@ export default {
               ]
             },
             {
-              // pendenza - piano
+              // pendenza - piano 106
               children: [
                 {
                   results: [12, 14]

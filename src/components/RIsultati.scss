@@ -1,100 +1,94 @@
-.risultati{
-    width: 100%;
+.risultati {
+  width: 100%;
 
-    &-section{
-
-        ul{
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            margin: 0 auto;
-            font-family: LeroyMerlinLight;
-            li{
-                float: left;
-                width: 75px;
-                height: 28px;
-                margin-right: 5px;;
-                border-radius: 14px;
-                background-color: #66cc33;
-                text-align: center;
-                a{
-                    text-decoration: none;
-                    font-size: 12px;
-                    line-height: 16px;
-                    letter-spacing: 0;
-                   color: #fff;
-                   margin: 0;
-                }
-            }
+  &-section {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      margin: 0 auto;
+      font-family: LeroyMerlinLight;
+      li {
+        a {
+          text-decoration: none;
+          font-size: 12px;
+          line-height: 16px;
+          letter-spacing: 0;
+          color: #fff;
+          margin: 0;
         }
+      }
     }
+  }
 }
-.chips-container{
+.chips-container {
+  width: 100%;
+  display: block;
+}
+.space {
+  margin-bottom: 30px;
+}
+.card {
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.12);
+  background-color: #ffffff;
+
+  width: 100%;
+  &__box-text {
+    margin: 15px auto;
+  }
+  p {
+    font-size: 12px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #000000;
+    font-family: LeroyMerlinLight;
+  }
+
+  &__main-title {
+    font-family: LeroyMerlinBold;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.11;
+    letter-spacing: normal;
+    color: #000000;
+    margin: 0;
+  }
+  &__box-img {
     width: 100%;
+    height: 76px;
+    background-image: url(https://image.shutterstock.com/image-photo/fat-raccoon-260nw-1097222504.jpg);
+    background-position: top center;
+    background-size: cover;
+    margin: 15px auto;
+  }
+
+  &__btn {
     display: block;
-}
-.card{
-    background-color: #fff;
-    padding: 15px;
-    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.12);
-    background-color: #ffffff;
-   
-    width:100%;
-    &__box-text{
-        margin: 15px auto;
-    }
-    p{
-        font-size: 12px;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.33;
-  letter-spacing: normal;
-  color: #000000;
-  font-family: LeroyMerlinLight;
-    }
-
-    &__main-title{
-        font-family: LeroyMerlinBold;
-        font-size: 18px;
-        font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.11;
-        letter-spacing: normal;
-        color: #000000;
-        margin: 0;
-    }
-    &__box-img{
-        width: 100%;
-        height: 76px;
-        background-image: url(https://image.shutterstock.com/image-photo/fat-raccoon-260nw-1097222504.jpg);
-        background-position: top center;
-        background-size: cover;
-        margin: 15px auto;
-
-    }
-
-    &__btn{
-        display: block;
-        width: 100%;
-        margin: 0;
-        color: #fff;
-        text-align: center;
-        padding: 18px 17px;
-        font-size: 18px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ffffff;
-        background-color: #66cc33;
-    }
+    width: 100%;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    padding: 18px 17px;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    background-color: #66cc33;
+  }
 }
 
-.main-title{
+.main-title {
   font-size: 30px;
   font-weight: bold;
   font-stretch: normal;
