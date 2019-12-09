@@ -21,6 +21,7 @@ class Questionario extends Component {
       checkId: [],
       ids: [],
 
+      titleStep: steps,
       attivita: steps[0].answers,
       ostacoli: steps[1].answers,
       pendenza: steps[2].answers,
@@ -37,7 +38,9 @@ class Questionario extends Component {
           <li
             className="navigation__step navigation__step--active"
             onClick={() => {
-              this.setState({ step: 1 });
+              if (checkId[0]) {
+                this.setState({ step: 1 });
+              }
             }}
           >
             <a href="#">Attività</a>
@@ -45,7 +48,9 @@ class Questionario extends Component {
           <li
             className="navigation__step"
             onClick={() => {
-              this.setState({ step: 2 });
+              if (checkId[1]) {
+                this.setState({ step: 2 });
+              }
             }}
           >
             <a href="#">Ostacoli</a>
@@ -53,7 +58,9 @@ class Questionario extends Component {
           <li
             className="navigation__step"
             onClick={() => {
-              this.setState({ step: 3 });
+              if (checkId[2]) {
+                this.setState({ step: 3 });
+              }
             }}
           >
             <a href="#">Pendenza</a>
@@ -61,7 +68,9 @@ class Questionario extends Component {
           <li
             className="navigation__step"
             onClick={() => {
-              this.setState({ step: 4 });
+              if (checkId[3]) {
+                this.setState({ step: 4 });
+              }
             }}
           >
             <a href="#">Dimensione</a>
@@ -74,7 +83,9 @@ class Questionario extends Component {
           <li
             className="navigation__step navigation__step--active"
             onClick={() => {
-              this.setState({ step: 1 });
+              if (checkId[0]) {
+                this.setState({ step: 1 });
+              }
             }}
           >
             <a href="#">Attività</a>
@@ -82,7 +93,9 @@ class Questionario extends Component {
           <li
             className="navigation__step navigation__step--active"
             onClick={() => {
-              this.setState({ step: 2 });
+              if (checkId[1]) {
+                this.setState({ step: 2 });
+              }
             }}
           >
             <a href="#">Ostacoli</a>
@@ -90,7 +103,9 @@ class Questionario extends Component {
           <li
             className="navigation__step"
             onClick={() => {
-              this.setState({ step: 3 });
+              if (checkId[2]) {
+                this.setState({ step: 3 });
+              }
             }}
           >
             <a href="#">Pendenza</a>
@@ -98,7 +113,9 @@ class Questionario extends Component {
           <li
             className="navigation__step"
             onClick={() => {
-              this.setState({ step: 4 });
+              if (checkId[3]) {
+                this.setState({ step: 4 });
+              }
             }}
           >
             <a href="#">Dimensione</a>
@@ -111,7 +128,9 @@ class Questionario extends Component {
           <li
             className="navigation__step navigation__step--active"
             onClick={() => {
-              this.setState({ step: 1 });
+              if (checkId[0]) {
+                this.setState({ step: 1 });
+              }
             }}
           >
             <a href="#">Attività</a>
@@ -119,7 +138,9 @@ class Questionario extends Component {
           <li
             className="navigation__step navigation__step--active"
             onClick={() => {
-              this.setState({ step: 2 });
+              if (checkId[1]) {
+                this.setState({ step: 2 });
+              }
             }}
           >
             <a href="#">Ostacoli</a>
@@ -127,7 +148,9 @@ class Questionario extends Component {
           <li
             className="navigation__step navigation__step--active"
             onClick={() => {
-              this.setState({ step: 3 });
+              if (checkId[2]) {
+                this.setState({ step: 3 });
+              }
             }}
           >
             <a href="#">Pendenza</a>
@@ -135,7 +158,9 @@ class Questionario extends Component {
           <li
             className="navigation__step"
             onClick={() => {
-              this.setState({ step: 4 });
+              if (checkId[3]) {
+                this.setState({ step: 4 });
+              }
             }}
           >
             <a href="#">Dimensione</a>
@@ -148,7 +173,9 @@ class Questionario extends Component {
           <li
             className="navigation__step navigation__step--active"
             onClick={() => {
-              this.setState({ step: 1 });
+              if (checkId[0]) {
+                this.setState({ step: 1 });
+              }
             }}
           >
             <a href="#">Attività</a>
@@ -156,7 +183,9 @@ class Questionario extends Component {
           <li
             className="navigation__step navigation__step--active"
             onClick={() => {
-              this.setState({ step: 2 });
+              if (checkId[1]) {
+                this.setState({ step: 2 });
+              }
             }}
           >
             <a href="#">Ostacoli</a>
@@ -164,7 +193,9 @@ class Questionario extends Component {
           <li
             className="navigation__step navigation__step--active"
             onClick={() => {
-              this.setState({ step: 3 });
+              if (checkId[2]) {
+                this.setState({ step: 3 });
+              }
             }}
           >
             <a href="#">Pendenza</a>
@@ -172,7 +203,9 @@ class Questionario extends Component {
           <li
             className="navigation__step navigation__step--active"
             onClick={() => {
-              this.setState({ step: 4 });
+              if (checkId[3]) {
+                this.setState({ step: 4 });
+              }
             }}
           >
             <a href="#">Dimensione</a>
@@ -185,7 +218,9 @@ class Questionario extends Component {
           <li
             className="navigation__step navigation__step--active"
             onClick={() => {
-              this.setState({ step: 1 });
+              if (checkId[step - 1]) {
+                this.setState({ step: 1 });
+              }
             }}
           >
             <a href="#">Attività</a>
@@ -193,7 +228,9 @@ class Questionario extends Component {
           <li
             className="navigation__step navigation__step--active"
             onClick={() => {
-              this.setState({ step: 2 });
+              if (checkId[step - 1]) {
+                this.setState({ step: 2 });
+              }
             }}
           >
             <a href="#">Ostacoli</a>
@@ -201,7 +238,9 @@ class Questionario extends Component {
           <li
             className="navigation__step navigation__step--active"
             onClick={() => {
-              this.setState({ step: 3 });
+              if (checkId[step - 1]) {
+                this.setState({ step: 3 });
+              }
             }}
           >
             <a href="#">Pendenza</a>
@@ -209,7 +248,9 @@ class Questionario extends Component {
           <li
             className="navigation__step"
             onClick={() => {
-              this.setState({ step: 4 });
+              if (checkId[step - 1]) {
+                this.setState({ step: 4 });
+              }
             }}
           >
             <a href="#">Dimensione</a>
@@ -222,7 +263,9 @@ class Questionario extends Component {
           <li
             className="navigation__step navigation__step--active"
             onClick={() => {
-              this.setState({ step: 1 });
+              if (checkId[step - 1]) {
+                this.setState({ step: 1 });
+              }
             }}
           >
             <a href="#">Attività</a>
@@ -230,7 +273,9 @@ class Questionario extends Component {
           <li
             className="navigation__step navigation__step--active"
             onClick={() => {
-              this.setState({ step: 2 });
+              if (checkId[step - 1]) {
+                this.setState({ step: 2 });
+              }
             }}
           >
             <a href="#">Ostacoli</a>
@@ -238,7 +283,9 @@ class Questionario extends Component {
           <li
             className="navigation__step navigation__step--active"
             onClick={() => {
-              this.setState({ step: 3 });
+              if (checkId[step - 1]) {
+                this.setState({ step: 3 });
+              }
             }}
           >
             <a href="#">Pendenza</a>
@@ -246,7 +293,9 @@ class Questionario extends Component {
           <li
             className="navigation__step navigation__step--active"
             onClick={() => {
-              this.setState({ step: 4 });
+              if (checkId[step - 1]) {
+                this.setState({ step: 4 });
+              }
             }}
           >
             <a href="#">Dimensione</a>
@@ -270,13 +319,15 @@ class Questionario extends Component {
     if (step === 1) {
       return attivita.map(element => {
         return (
-          <Step1
-            id={element.id}
-            title={element.title}
-            description={element.description}
-            img={require(`./../assets/img/${element.image}`)}
-            onclick={this.click}
-          ></Step1>
+          <div>
+            <Step1
+              id={element.id}
+              title={element.title}
+              description={element.description}
+              img={require(`./../assets/img/${element.image}`)}
+              onclick={this.click}
+            ></Step1>
+          </div>
         );
       });
     }
@@ -932,11 +983,33 @@ class Questionario extends Component {
       step: step - 1
     });
   };
+  showTitle = () => {
+    const { step, titleStep } = this.state;
+
+    const arr = titleStep.map(element => (
+      <h1 className="main-title">{element.question}</h1>
+    ));
+
+    if (step == 1) {
+      return arr[step - 1];
+    }
+    if (step == 2) {
+      return arr[step - 1];
+    }
+    if (step == 3) {
+      return arr[step - 1];
+    }
+    if (step == 4) {
+      return arr[step - 1];
+    }
+  };
   componentDidUpdate() {
     this.showNav();
   }
+
   render() {
-    const { step, checkId } = this.state;
+    const { step, checkId, titleStep } = this.state;
+
     console.log(checkId);
     return (
       <div className="App-container">
@@ -946,7 +1019,7 @@ class Questionario extends Component {
           </Row>
         </Container>
 
-        <h2>Step {this.state.step} di 4</h2>
+        {this.showTitle()}
         {step === 5 ? (
           <Container>
             <Row>
