@@ -12,7 +12,7 @@ p {
 }
 .navigation__step {
   float: left;
-  width: 75px;
+  width: 84px;
   height: 28px;
   margin-right: 5px;
   border-radius: 14px;
@@ -22,4 +22,15 @@ p {
   &--active {
     background-color: #66cc33 !important;
   }
+}
+.main-title {
+  font-family: LeroyMerlinBold;
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.06;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
 }

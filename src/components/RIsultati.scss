@@ -1,19 +1,19 @@
 .risultati {
-  width: 100%;
-
   &-section {
+    width: 100%;
+    padding: 0;
+    display: block;
+    margin: 0 auto;
     ul {
       list-style-type: none;
-      margin: 0;
-      padding: 0;
+      display: block;
       margin: 0 auto;
+      padding: 0;
       font-family: LeroyMerlinLight;
       li {
         a {
           text-decoration: none;
           font-size: 12px;
-          line-height: 16px;
-          letter-spacing: 0;
           color: #fff;
           margin: 0;
         }

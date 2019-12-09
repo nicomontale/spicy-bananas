@@ -326,11 +326,13 @@ class Questionario extends Component {
               description={element.description}
               img={require(`./../assets/img/${element.image}`)}
               onclick={this.click}
+              filterClass="filter"
             ></Step1>
           </div>
         );
       });
     }
+
     if (step === 2) {
       return ostacoli.map(element => {
         return (
@@ -941,6 +943,14 @@ class Questionario extends Component {
       this.setState({
         checkId: [...ids]
       });
+      const parent = e.target.parentNode.childNodes;
+      parent.forEach(element => {
+        if (element === "filter--active") {
+          element.classList.remove("filter--active");
+        } else {
+          element.classList.add("filter--active");
+        }
+      });
     }
     if (step === 2) {
       ids[step - 1] = e.target.id;
@@ -1013,7 +1023,7 @@ class Questionario extends Component {
     console.log(checkId);
     return (
       <div className="App-container">
-        <Container fluid={true} className="risultati-section">
+        <Container className="risultati-section">
           <Row>
             <ul>{this.showNav()}</ul>
           </Row>
