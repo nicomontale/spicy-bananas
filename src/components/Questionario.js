@@ -944,13 +944,18 @@ class Questionario extends Component {
         checkId: [...ids]
       });
       const parent = e.target.parentNode.childNodes;
+      console.log(parent);
       parent.forEach(element => {
-        if (element === "filter--active") {
-          element.classList.remove("filter--active");
+        if (element.className !== "filter filter-active") {
+          console.log(element.className);
+          element.className.add("filter--active");
         } else {
-          element.classList.add("filter--active");
+          console.log(element.className);
+          element.className.remove("filter--active");
         }
+
       });
+
     }
     if (step === 2) {
       ids[step - 1] = e.target.id;
@@ -1044,8 +1049,8 @@ class Questionario extends Component {
         {step === 4 ? (
           <div className="step-4__container">{this.showStep()}</div>
         ) : (
-          <div className="step-cards-container">{this.showStep()}</div>
-        )}
+            <div className="step-cards-container">{this.showStep()}</div>
+          )}
 
         {step < 5 ? (
           <div
